@@ -11,6 +11,7 @@
     --yellow-clr: #fdfd3b;
     --hover-clr: #ac4747;
     --title-clr: white;
+    --fs-title-social : 2.2rem;
 }
 html {
     scroll-behavior:smooth;
@@ -39,6 +40,11 @@ a {
     margin-left: auto;
 }
 /* min device */
+@media (max-width: 768px) {
+    .container {
+       max-width: 700px;
+    }
+}
 @media (min-width: 768px) {
     .container {
         width: 720px;
@@ -337,15 +343,20 @@ a {
     background-image: url(../images/girl-01.jpg);
 }
 .social__box .box__up .card__right {
-    padding: 40px 120px 10px ;
+    padding: 50px 0 ;
     background: var(--main-bgd-clr);
     color: white;
     display: grid;
     place-items: center;
 }
+.social__box .box__up .card__right > * {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 .social__box .box__up .card__title {
-    font-size: 2.2rem;
+    font-size: var(--fs-title-social);
     font-weight: 300;
     margin-bottom: 2rem;
 }
@@ -362,6 +373,8 @@ a {
 
 
 .social__box .box__down .card__right {
+    background-size: cover;
+    background-repeat: no-repeat;
     background-image: url(../images/backpack-guy.jpg);
     background-position: right;
 }
@@ -383,7 +396,7 @@ a {
     margin: 0 auto 2rem;
 }
 .social__box .box__down .card__left .card__title {
-    font-size: 2.5rem;
+    font-size: var(--fs-title-social);
     font-weight: 300;
 }
 .social__box .box__down .card__left .card__desc {
@@ -460,6 +473,15 @@ a {
     .social__box .box__up .card__right {
         place-items: unset;
     }
+}
+
+@media (max-width:767px) {
+ .social__box .box__down .card__left .card__content > * {
+     text-align: center;
+ }
+ .social__box .box__down .card__left .card__title {
+     font-size: 1.8rem;
+ }
 
 }
 /* -------------------------- Social ---[off]------ */
