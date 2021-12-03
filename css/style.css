@@ -482,6 +482,9 @@ a {
  .social__box .box__down .card__left .card__title {
      font-size: 1.8rem;
  }
+ .social__box .box__down .card__right {
+     background-position: 70%;
+ }
 
 }
 /* -------------------------- Social ---[off]------ */
